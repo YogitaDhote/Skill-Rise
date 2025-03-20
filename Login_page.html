@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Page</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                min-height: 100vh;
+                background-color:black;
+                display: flex;
+                font-family: sans-serif;
+            }
+            .container{
+                margin:auto;
+                width:400px;
+                height: 420px;
+                border-radius: 12px;
+            }
+            .container form{
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+                background-color:#18181B;
+                border-radius: 4px;
+                box-shadow: 0 8px 16px rgba(0,0,0,.3);
+            }
+            .container form h3{
+                text-align: center;
+                margin-bottom: 24px;
+                color:white;
+                font-weight: bold;
+            }
+            .container form .form-control{
+                width:100%;
+                height:40px;
+                background:#18181B;
+                border-radius: 4px;
+                border:1px solid black;
+                margin:10px 0 8px 0;
+                padding: 0 10px;
+            }
+            .container form .btn{
+                margin-left: 50%;
+                transform:translateX(-50%);
+                width:120px;
+                height: 34px;
+                border:none;
+                outline:none;
+                background:#2DD4BF;
+                cursor: pointer;
+                font-size: 16px;
+                color:white;
+                border-radius: 4px;
+                transition: .3s;
+                padding: 8px 150px;
+                text-align: center;
+            }
+            .container form .btn:hover{
+                opacity: .7;
+            }
+            .container form h3 .part1{
+                color:#2DD4BF;
+                display: inline;
+            }
+            .container form h3 .skill{
+                display: inline;
+            }
+            .container form .part2{
+                text-align: center;
+                padding: 10px;
+                color:#A1A1AA;
+            }
+            .container form .form-group label{
+                color:#A1A1AA;
+                padding: 8px;
+            }
+            .container form .form-group{
+                padding: 10px;
+            }
+            .container form .sign-up{
+                color:#A1A1AA;
+                padding-top: 20px;
+                text-align: center;
+            }
+            .container form .sign-up a{
+                text-decoration: none;
+                color:#2DD4BF;
+                text-align: center;
+            }
+            .container form .btn{
+                display: flex;
+                justify-content: center;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="">
+                <h3><p class="skill">Skill</p><p class="part1">Rise </p></h3>
+                <p class="part2">Welcome back! please login to continue</p>
+                <div class="form-group">
+                    <label for="">Email Id</label>
+                    <input type="text" placeholder="Enter your email id" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Enter password" class="form-control" required>
+                </div>
+                <input type="submit" class="btn" value="Sign In">
+                <p class="sign-up">Don't have an account?<a>Sign up</a></p>
+            </form>
+        </div>
+        <script>
+            const Submit=document.querySelector('.btn')
+            Submit.addEventListener("click",function(){
+               alert('Congratulations! you are successfully loged in.')  
+            })
+        </script>
+    </body>
+</html>
