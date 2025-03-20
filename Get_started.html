@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <title>Get Started Page</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 100%;
+                height: 100%;
+                background-color:black;
+                font-family: sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container{
+                width:390px;
+                height:510px;
+                background-color:#18181B;
+                padding:10px;
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .container h3 .skill{
+                color:white;
+                font-weight: bold;
+                display: inline;
+            }
+            .container h3 .rise{
+                color:#2DD4BF;
+                font-weight: bold;
+                display: inline;
+            }
+            .container .start{
+                color:#A1A1AA;
+                padding:15px;
+            }
+            .container form{
+                width: 100%;
+                height: 100%;
+                padding:5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .container form .group-one{
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5px;
+            }
+             .container form .group-one .input-tag{
+                padding:9px 70px 9px 9px;
+                 background-color: black;
+                 opacity: .8;
+                 color:#A1A1AA;
+                 border-radius: 8px;
+            }
+             .container form .group-one label{
+                color:#A1A1AA;
+            }
+            .container form .btn{
+                background-color:#2DD4BF;
+                color:white;
+                font-weight: 500;
+                padding: 8px 70px;
+                border-radius:8px;
+            }
+            .container pree{
+                color:#A1A1AA;
+            }
+            .container pree .sign-in{
+                color:#2DD4BF;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3><p class="skill">Skill</p><p class="rise">Rise</p></h3>
+            <p class="start">Create your account to get started</p>
+            <form action="">
+                <div class="group-one">
+                    <label for="name">Full Name</label>
+                    <input type="text"  class="input-tag" placeholder="Enter your full name" id="name" required>
+                </div>
+                 <div class="group-one">
+                    <label for="mail">Email</label>
+                    <input type="text" class="input-tag" placeholder="Enter your email" id="mail" required>
+                </div>
+                 <div class="group-one">
+                    <label for="pw">Password</label>
+                    <input type="text" class="input-tag" placeholder="Create a password" id="pw" required>
+                </div>
+                <button class="btn">Create Account -></button>
+            </form>
+            <pree>Already have an account?<p class="sign-in"><a>Sign in</a></p></pree>
+        </div>
+        <script>
+            var neww=document.querySelector('.btn')
+            neww.addEventListener("click",function(){
+                alert("Acoount is Created Successfully")
+            })
+        </script>
+    </body>
+</html>
